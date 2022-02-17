@@ -97,6 +97,7 @@ task runclient(type: JavaExec) {
 task setup() {
     group = "MCP"
     description = "Setups the dev workspace"
+    mkdir 'projects/mcp'
     dependsOn ':extractMapped'
     mkdir 'run/assets'
     copy {
